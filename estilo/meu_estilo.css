@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root {
+    --cor-texto: #333; /* Dark Gray */
+    --cor-fundo : #f0f0f0; /* Light Gray */
+    --cor01: #84C318; /* Yellow Green */
+    --cor02: #78C0E0; /* Sky Blue */
+    --cor03: #46237A; /* Tekhelet */
+    --cor04: #D64933; /* Chilli Red */
+    --cor05: #FFCB47; /* Sun GLow */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor05);
+}
+
+main {
+    background-color: var(--cor-fundo);
+    border-radius: 20px;
+    width: 90vw;
+    height: 90vh;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--cor03);
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 10px 20px;
+}
