@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 6</title>
+    <link rel="stylesheet" href="../../estilo/meu_estilo.css">
+</head>
+<body>
+    <main>
+        <h1>Testando Javascript</h1>
+        <hr>
+        <script>
+            let nome = window.prompt("Qual é o seu nome?");
+            document.write(`<h2>Olá, <strong>${nome}</strong>!<br>Seja bem-vindo(a) ao nosso site!</h2>`);
+            document.write(`<br>Seu nome tem ${nome.length} letras! `);
+            document.write(`<br>Seu nome em maiúsculas é ${nome.toUpperCase()}.`);
+            document.write(`<br>Seu nome em minúsculas é ${nome.toLowerCase()}.`);
+            document.write(`<br>Seu nome tem ${nome.split(" ").length} palavras!`);
+            // n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        </script>
+    </main>
+    <footer>
+        Site deservolvido por Otávio Vinicios Borges para o curso de Javascript
+    </footer>
+</body>
+</html>

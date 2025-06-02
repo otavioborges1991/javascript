@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 7</title>
+    <link rel="stylesheet" href="../../estilo/meu_estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Javascript</h1>
+    </header>
+    <main>
+        <div class="dialogo">
+            <h2>Exercício 7</h2>
+            <p>Operadores aritméticos em javascript</p>
+            <pre>
+                <ul>
+                    <li>+ adição</li>
+                    <li>- subtração</li>
+                    <li>* multiplicação</li>
+                    <li>/ divisão</li>
+                    <li>% resto da divisão</li>
+                    <li>** potenciação</li>
+                    <li>++ incremento</li>
+                    <li>-- decremento</li>
+                    <li>+= adição e atribuição</li>
+                    <li>-= subtração e atribuição</li>
+                    <li>*= multiplicação e atribuição</li>
+                    <li>/= divisão e atribuição</li>
+                    <li>%= resto da divisão e atribuição</li>
+                    <li>**= potenciação e atribuição</li>
+                    <li>++i incremento antes da variável</li>
+                    <li>i++ incremento depois da variável</li>
+                    <li>--i decremento antes da variável</li>
+                    <li>i-- decremento depois da variável</li>
+                    <li>== igualdade</li>
+                    <li>!= desigualdade</li>
+                    <li>=== igualdade estrita</li>
+                    <li>!== desigualdade estrita</li>
+                    <li>&lt; menor que</li>
+                    <li>&gt; maior que</li>
+                    <li>&lt;= menor ou igual</li>
+                    <li>&gt;= maior ou igual</li>
+                    <li>&& operador lógico E</li>
+                    <li>|| operador lógico OU</li>
+                    <li>! operador lógico NÃO</li>
+                    <li>? operador ternário</li>
+                </ul>
+            </pre>
+        </div>
+        <div class="codeblock">
+            <script src="scripts/operacoes_aritmeticas.js"></script>
+        </div>
+        <div>
+            <h3>Notas</h3>
+            <p>Os operadores de incremento de decremento, ambos podem ser pos fixado ou pre fixado.</p>
+            <p>a++ e b-- não mostram o valor origial de a e b respectivamente porque só passam a ter efeito apos a operação ser feita.</p>
+        </div>
+
+        <div class="dialogo">
+            <h3>Ordem de precedencia</h3>
+            <p>Ordem de precedencia em operações aritméticas se aplicam no javascript</p>
+            <ol>
+                <li>Parênteses <code>()</code></li>
+                <li>Expoentes <code>**</code></li>
+                <li>Multiplicação <code>*</code>, Divisão <code>/</code>, Resto <code>%</code></li>
+                <li>Adição <code>+</code> e Subtração <code>-</code></li>
+                <li>Incremento <code>++</code> e Decremento <code>--</code></li>
+                <li>Operadores relacionais <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></li>
+                <li>Igualdade <code>==</code>, <code>!=</code>, <code>===</code>, <code>!==</code></li>
+                <li>Operadores lógicos <code>&&</code>, <code>||</code>, <code>!</code></li>
+                <li>Operador ternário <code>?</code> <code>:</code></li>
+                <li>Atribuição <code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>**=</code></li>
+            </ol>
+        </div>
+        <div class="codeblock">
+            <script src="scripts/ordem_de_precedencia.js">
+
+            </script>
+        </div>
+        <div>
+            <h3>Notas</h3>
+            <p>
+                A ordem de precedência é importante para garantir que as operações sejam realizadas na sequência correta.
+                Por exemplo, em uma expressão como <code>2 + 3 * 4</code>, a multiplicação será realizada antes da adição, resultando em <code>2 + 12 = 14</code>.
+            </p>
+            <p>
+                Se você quiser alterar a ordem de precedência, pode usar parênteses. Por exemplo, <code>(2 + 3) * 4</code> resultará em <code>5 * 4 = 20</code>.
+            </p>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por Otávio Vinicios Borges para o curso de Javascript
+    </footer>
+</body>
+</html>

@@ -24,14 +24,80 @@ body {
     background-color: var(--cor05);
 }
 
+header {
+    background-color: var(--cor01);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
 main {
     background-color: var(--cor-fundo);
     border-radius: 20px;
     width: 90vw;
-    height: 90vh;
-    margin: 50px auto;
+    min-height: 90vh;
+    margin: 100px auto 150px auto;
     padding: 20px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--cor02);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+div.dialogo {
+    background-color: var(--cor03);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+div.codeblock {
+    padding: 15px;
+    border-radius: 0px;
+    border: 2px solid var(--cor03);
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+}
+
+
+footer {
+    background-color: var(--cor02);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 10px;
+    columns: 2;
+    border: 1px solid black;
+}
+
+ol {
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    list-style-type: decimal;
+    padding: 20px;
+    columns: 2;
+    border: 1px solid black;
 }
 
 h1 {
@@ -39,8 +105,16 @@ h1 {
     font-size: 2.5rem;
     color: var(--cor03);
 }
+
+h2 {
+    margin: 20px 0;
+}
 p {
-    font-size: 1.2rem;
+    font-size: 1em;
     line-height: 1.5;
     margin: 10px 20px;
+}
+
+pre {
+    white-space: pre-line;
 }
