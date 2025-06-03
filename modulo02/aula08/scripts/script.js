@@ -1,0 +1,11 @@
+document.writeln("Operadores de comparação:<br>");
+document.writeln("<ul>");
+document.writeln("<li>5 == 5: " + (5 == 5) + "</li>");
+document.writeln("<li>5 != 3: " + (5 != 3) + "</li>");
+document.writeln("<li>5 === 5: " + (5 === 5) + "</li>");
+document.writeln("<li>5 !== 3: " + (5 !== 3) + "</li>");
+document.writeln("<li>5 > 3: " + (5 > 3) + "</li>");
+document.writeln("<li>5 < 3: " + (5 < 3) + "</li>");
+document.writeln("<li>5 >= 5: " + (5 >= 5) + "</li>");
+document.writeln("<li>5 <= 3: " + (5 <= 3) + "</li>");
+document.writeln("</ul>");

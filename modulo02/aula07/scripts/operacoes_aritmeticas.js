@@ -21,15 +21,5 @@ document.writeln("<li>a *= b = " + (a *= b) + "</li>");
 document.writeln("<li>a /= b = " + (a /= b) + "</li>");
 document.writeln("<li>a %= b = " + (a %= b) + "</li>");
 document.writeln("<li>a **= b = " + (a **= b) + "</li>");
-document.writeln("<li>a == b = " + (a == b) + "</li>");
-document.writeln("<li>a != b = " + (a != b) + "</li>");
-document.writeln("<li>a === b = " + (a === b) + "</li>");
-document.writeln("<li>a !== b = " + (a !== b) + "</li>");
-document.writeln("<li>a > b = " + (a > b) + "</li>");
-document.writeln("<li>a < b = " + (a < b) + "</li>");
-document.writeln("<li>a >= b = " + (a >= b) + "</li>");
-document.writeln("<li>a <= b = " + (a <= b) + "</li>");
-document.writeln("<li>a && b = " + (a && b) + "</li>");
-document.writeln("<li>a || b = " + (a || b) + "</li>");
 document.writeln("</ul>");
 document.writeln("</code>")
