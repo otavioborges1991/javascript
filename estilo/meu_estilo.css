@@ -53,6 +53,7 @@ div {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+
 div.dialogo {
     color: black;
     font-weight: normal;
@@ -130,4 +131,30 @@ code {
     color: black;
     padding: 5px;
     border-radius: 4px;
+}
+
+/*
+ * Estilo para elementos clicáveis
+ */
+div.clicavel {
+    color: white;
+    font-weight: bold;
+    background-color: var(--cor01);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+                inset -5px -5px 10px rgba(0, 0, 0, 0.3),
+                inset 5px 5px 10px white;
+    max-width: fit-content;
+    max-height: fit-content;
+    user-select: none;
+    cursor: pointer;
+}
+div.clicavel:hover {
+    background-color: var(--cor05);
+    color: black;
+}
+div.clicavel:active {
+    background-color: var(--cor04);
+    color: white;
 }

@@ -1,0 +1,12 @@
+var p1 = window.document.getElementsByTagName("p")[0];
+var p2 = window.document.getElementsByTagName("p")[1];
+var p3 = window.document.getElementsByTagName("p")[2];
+document.writeln(p1.innerHTML + "<br>");
+document.writeln(p2.innerHTML + "<br>");
+document.writeln(p3.innerHTML + "<br>");
+p1.style.color = "red";
+p2.style.color = "blue";
+p3.style.color = "green";
+var corpo = window.document.getElementsByTagName("body")[0];
+corpo.style.backgroundColor = "black";
+window.alert(window.document.getElementsByTagName("h1")[0].innerHTML);
