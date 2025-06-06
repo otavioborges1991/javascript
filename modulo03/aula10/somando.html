@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 10</title>
+    <link rel="stylesheet" href="../../estilo/meu_estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Javascript</h1>
+
+    </header>
+    <main>
+        <div class="dialogo">
+            <h2>Aula 10</h2>
+            <p>Somando Números</p>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Somando valores</legend>
+                <label for ="txtn1">
+                    Número 1:
+                    <input type="number" name="txtn1" id="txtn1" placeholder="Digite um número" required>
+                </label>
+                <label for ="txtn2">
+                    Número 2:
+                    <input type="number" name="txtn2" id="txtn2" placeholder="Digite um número" required>
+                </label>
+                <input type="submit" value="Somar" onclick="somar()">
+                <br>
+                <span id="resultado"></span>
+                <script src="scripts/script02.js"></script>
+            </fieldset>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por Otávio Vinicios Borges para o curso de Javascript
+    </footer>
+</body>
+</html>

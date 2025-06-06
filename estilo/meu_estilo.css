@@ -3,6 +3,7 @@
 :root {
     --cor-texto: #333; /* Dark Gray */
     --cor-fundo : #f0f0f0; /* Light Gray */
+    --cor-sombra: rgba(0,0,0,0.5); /* Black */
     --cor01: #84C318; /* Yellow Green */
     --cor02: #78C0E0; /* Sky Blue */
     --cor03: #46237A; /* Tekhelet */
@@ -17,7 +18,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-texto);
     background-color: var(--cor05);
 }
@@ -29,8 +30,9 @@ header {
     padding: 20px;
     position: fixed;
     top: 0;
-    width: 100%;
-    box-shadow: 0 4px 2px -2px gray;
+    left: -10px;
+    width: 110%;
+    box-shadow: 0 4px 2px -2px var(--cor-sombra);
 }
 
 main {
@@ -40,7 +42,7 @@ main {
     min-height: 90vh;
     margin: 150px auto 75px auto;
     padding: 20px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px var(--cor-sombra);
 }
 
 div {
@@ -50,9 +52,8 @@ div {
     padding: 20px;
     background-color: var(--cor02);
     border-radius: 10px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px var(--cor-sombra);
 }
-
 
 div.dialogo {
     color: black;
@@ -61,7 +62,7 @@ div.dialogo {
     color: white;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px var(--cor-sombra);
 }
 
 div.codeblock {
@@ -72,8 +73,17 @@ div.codeblock {
     border: 2px solid var(--cor03);
     font-family: 'Courier New', Courier, monospace;
     overflow-x: auto;
+    /* No box-shadow here */
 }
 
+div#area {
+    color: white;
+    font: normal 20pt Arial;
+    background: yellowgreen;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
 
 footer {
     background-color: var(--cor02);
@@ -85,10 +95,22 @@ footer {
     width: 100%;
 }
 
+fieldset {
+    background-color: var(--cor05);
+    color: #000;
+    border: 2px solid var(--cor03);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/*
+    Estilos para Textos
+*/
 ul {
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px var(--cor-sombra);
     list-style-type: none;
     padding: 10px;
     columns: 2;
@@ -98,7 +120,7 @@ ul {
 ol {
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px var(--cor-sombra);
     list-style-type: decimal;
     padding: 20px;
     columns: 2;
@@ -142,11 +164,12 @@ div.clicavel {
     background-color: var(--cor01);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
-                inset -5px -5px 10px rgba(0, 0, 0, 0.3),
+    box-shadow: 5px 5px 10px var(--cor-sombra),
+                inset -5px -5px 10px var(--cor-sombra),
                 inset 5px 5px 10px white;
     max-width: fit-content;
     max-height: fit-content;
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
     user-select: none;
     cursor: pointer;
 }
