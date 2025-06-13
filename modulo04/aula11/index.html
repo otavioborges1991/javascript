@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 11</title>
+    <link rel="stylesheet" href="../../estilo/meu_estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Javascript</h1>
+        <p>Aula 11</p>
+    </header>
+    <main>
+        <div class="dialogo">
+            <h2>Detran</h2>
+            <h3>Sistema de multas</h3>
+        </div>
+        <div class="codeblock">
+            Velocidade: <input type="number" id="txtvel" placeholder="km/h" min="0">
+            <input type="submit" value="Verificar" onclick="calcular()">
+        </div>
+        <div id="res">
+            <script src="scripts/script01.js"></script>
+        </div>
+        <div class="dialogo">
+            <h3>Em que país você mora?</h3>
+        </div>
+        <div class="codeblock">
+            <fieldset>
+                <legend>País</legend>
+                <label>País de origem <input type="text" placeholder="Brasil" id="origem"></label>
+                <input type="submit" value="Verificar" onclick="nacionalidade()">
+            </fieldset>
+            Sua nacionalidade: <span id="nacionalidade">Ainda não definido</span>
+            <script src="scripts/script01.js"></script>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por Otávio Vinicios Borges para o curso de Javascript
+    </footer>
+</body>
+</html>
