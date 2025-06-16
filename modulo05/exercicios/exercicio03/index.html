@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Parametros</legend>
+            <div class="flex">
+                <div class="box right-aligned">
+                    <label for="inicio">Inicio:</label>
+                    <label for="fim">Fim:</label>
+                    <label for="passo">Passo:</label>
+                </div>
+                <div class="box">
+                    <input type="number" name="inicio" id="inicio" placeholder="Em que número começa" min="0"><br>
+                    <input type="number" name="fim" id="fim" placeholder="Em que número termina" min="0"><br>
+                    <input type="number" name="passo" id="passo" placeholder="Em quantos passos" min="1"><br>
+                </div>
+                <div class="help-box max-width150">
+                    <p>Insira os paramêtros para a contagem nas caixas ao lado.</p>
+                </div>
+            </div>
+            <input type="submit" value="Contar" id="contar">
+        </fieldset>
+        <div class="result-box">
+            <span id="resultado">Preparando Contagem...</span>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Otavio Vinicios Borges</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
