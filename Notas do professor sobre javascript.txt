@@ -1,0 +1,11 @@
+Coisas para aprender
+
+functions - arrow functions, call back, funçoes anonimas, iife
+objects - OOP
+modularização - separa codigos em arquivos e reultilizalos
+RegEx - otimo para validar dados
+JSON - estruturas de objetos para transmitir e salvar dados localmente
+AJAX - usado em sites com rolagem infinita. aonde novo conteudo é carregado quando se
+Node.js - rodar javascript no servidor
+outros frameworks como angular, vue e tudo mais
+
